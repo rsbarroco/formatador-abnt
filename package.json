@@ -1,0 +1,18 @@
+{
+  "name": "formatador-abnt",
+  "version": "0.1.0",
+  "description": "Formatacao automatica de trabalhos academicos nas normas ABNT, com relatorio de conformidade",
+  "type": "module",
+  "license": "MIT",
+  "bin": { "formatador-abnt": "./src/cli.js" },
+  "files": ["src"],
+  "engines": { "node": ">=18" },
+  "keywords": ["abnt", "nbr-14724", "tcc", "monografia", "docx", "formatacao", "academico"],
+  "scripts": {
+    "exemplo": "node src/cli.js samples/trabalho.md --out out/trabalho",
+    "exemplo:erros": "node src/cli.js samples/trabalho-com-erros.md --out out/com-erros --no-pdf"
+  },
+  "dependencies": {
+    "docx": "9.5.1"
+  }
+}
